@@ -1,0 +1,10 @@
+Colors:
+Black: #0f0e17
+White: #fffffe
+https://www.schemecolor.com/
+
+template: 
+https://designdrastic.github.io/AboutME/
+
+colourful-beach.php
+Fonts: Ubunto
