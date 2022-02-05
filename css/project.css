@@ -105,8 +105,7 @@ body {
   right: 0;
   width: 70%;
   height: 70%;
-  background: linear-gradient(0.25turn, #7f5af0, 60%, #72757e);
-  /* border: 2px solid black; */
+  background: linear-gradient(0.25turn, #2cb67d, 65%, #72757e);
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.5s;
@@ -114,7 +113,6 @@ body {
 
 /* Project image */
 .portfolio-projects img {
-  /* object-fit: cover; */
   height: 540px;
   width: 960px;
   position: absolute;
@@ -122,7 +120,7 @@ body {
   top: 50%;
   transform: translate(-40%, -50%) scale(0.95);
   visibility: hidden;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 1px 1px 10px black;
   opacity: 0;
   transition: all 0.5s;
 }
