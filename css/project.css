@@ -6,6 +6,7 @@
   --secondary-color: #fffffe;
   --button-color: #7f5af0;
   --dark-color: #16161a;
+  --background-clr: rgb(253, 190, 51);
 }
 
 * {
@@ -16,7 +17,6 @@
   text-decoration: none;
   list-style-type: none;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 500;
   animation: fadeInRight 500ms ease-in-out;
 }
 
@@ -105,10 +105,11 @@ body {
   right: 0;
   width: 70%;
   height: 70%;
-  background: linear-gradient(0.25turn, #2cb67d, 65%, #72757e);
+  color: var(--background-clr);
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.5s;
+  margin-right: 3.6rem;
 }
 
 /* Project image */
