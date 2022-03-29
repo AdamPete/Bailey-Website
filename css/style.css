@@ -55,8 +55,8 @@ html {
 .cursor {
   width: 25px;
   height: 25px;
-  border: 2px solid var(--primary-color);
-  background-color: var(--primary-color);
+  /* border: 2px solid var(--primary-color);
+  background-color: var(--primary-color); */
   border-radius: 50%;
   position: absolute;
   transition-duration: 400ms;
@@ -69,7 +69,7 @@ html {
   width: 20px;
   height: 20px;
   position: absolute;
-  border: 8px solid var(--button-color);
+  border: 4px solid var(--button-color);
   border-radius: 50%;
   top: -6px;
   left: -6px;
@@ -86,10 +86,22 @@ html {
 .section-1 {
   width: 100%;
   height: 100vh;
-  background-size: cover;
   flex-direction: column;
-  /* background: url(/public/images/bg-section1.jpg); */
-  background-color: var(--primary-color);
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(127, 90, 240, 0.25),
+      rgba(5, 1, 0, 0.75)
+    ),
+    url('/public/images/bg-dance.jpeg');
+  background-size: cover;
+  background-position: center;
+
+  /* background: url(/public/images/bg-outside.jpeg) no-repeat center fixed;
+
+  background-size: cover; */
+
+  /* background-color: var(--primary-color); */
 }
 
 .section-1-heading {
@@ -97,40 +109,21 @@ html {
   padding: 3rem 3rem;
   margin-bottom: 4rem;
   text-overflow: clip;
-  border: 1px solid var(--button-color);
+  /* border: 1px solid var(--button-color); */
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1rem;
-  font-size: 5rem;
-}
-
-/* .person-img {
-  width: 25rem;
-  height: 25rem;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 0.7rem solid var(--button-color);
-  padding: 0.2rem;
-  margin: 1rem 1rem;
-  opacity: 0.9;
-}
-
-.person-name {
-  font-size: 2.5rem;
+  font-size: 6.4rem;
   font-weight: 700;
-  color: var(--button-text-color);
-  background-color: var(--button-color);
-  margin: 5rem 0;
-  padding: 0.8rem 3rem;
-  letter-spacing: 1rem;
-} */
+  z-index: 1;
+}
 
 .section-1-btn {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   color: var(--button-text-color);
   padding: 1.5rem 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.5rem;
 }
 
 .button-link {
@@ -142,6 +135,7 @@ html {
 
 .button-link:hover {
   color: #fff;
+  font-weight: 700;
 }
 
 .button-link::before {
@@ -165,10 +159,10 @@ html {
 .navbar {
   width: 100%;
   height: 4.5rem;
-  background-color: var(--secondary-color);
+  background-color: var(--dark-color);
   position: absolute;
   z-index: 300;
-  border-bottom: 3px solid var(--button-color);
+  border-bottom: 1px solid var(--button-color);
 }
 
 .sticky {
@@ -218,10 +212,17 @@ html {
 .about-section {
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(5, 1, 0, 0.25),
+      rgba(5, 1, 0, 0.75)
+    ),
+    url('/public/images/bg-outside.jpeg');
+  color: #fff;
 }
 
 .about-main {
+  z-index: 1;
   margin: 0 auto;
   height: 100vh;
   display: flex;
@@ -311,9 +312,9 @@ html {
   padding: 1rem 1rem;
   font-size: 2rem;
   place-items: center;
-  /* background: url(/public/images/bg-section1.jpg); */
-  border-top: 3px solid var(--button-color);
-  background-color: var(--primary-color);
+  background: url(/public/images/bg-dance.jpeg);
+  border-top: 1px solid var(--button-color);
+  background-color: var(--dark-color);
 }
 
 .wrapper .button {
@@ -389,25 +390,32 @@ html {
 
 .copyright {
   border-top: 1px solid var(--button-color);
-  font-size: 12px;
+  font-size: 1.6rem;
   padding: 1rem 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: var(--secondary-color);
+  color: white;
 }
 
 .copyright p {
-  font-size: 14px;
   padding: 1rem 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: var(--secondary-color);
 }
 
-.copyright a {
-  font-size: 14px;
-  text-decoration: underline;
-  color: var(--button-color);
+.copyright a:link,
+.copyright a:visited {
+  font-size: 1.6rem;
+  color: white;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.copyright a:hover {
+  background-color: white;
+  color: var(--dark-color);
+  transform: scale(1.01);
+  box-shadow: 0px 0px 5px #fff;
 }
 
 /* End of Footer */
@@ -428,6 +436,10 @@ html {
   .about-img {
     height: 500px;
     width: 500px;
+  }
+
+  .about-img {
+    display: none;
   }
 }
 

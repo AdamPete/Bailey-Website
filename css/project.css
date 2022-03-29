@@ -22,7 +22,7 @@
 
 body {
   position: relative;
-  background-color: var(--bg);
+  background-color: var(--button-color);
 }
 
 .center {
@@ -81,7 +81,7 @@ body {
   content: '';
   left: 0;
   top: 0;
-  width: 100%;
+  width: 101%;
   transition: all 0.5s;
   height: 100%;
   background-color: var(--bg);
@@ -141,7 +141,7 @@ body {
 }
 
 .arrow:hover {
-  border: solid var(--button-color);
+  border: solid white;
   border-width: 0 10px 10px 0;
 }
 
