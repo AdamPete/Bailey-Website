@@ -52,34 +52,6 @@ html {
   left: -8px;
 }
 
-.cursor {
-  width: 25px;
-  height: 25px;
-  /* border: 2px solid var(--primary-color);
-  background-color: var(--primary-color); */
-  border-radius: 50%;
-  position: absolute;
-  transition-duration: 400ms;
-  transition-timing-function: ease-out;
-  z-index: 1;
-}
-
-.cursor::after {
-  content: '';
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border: 4px solid var(--button-color);
-  border-radius: 50%;
-  top: -6px;
-  left: -6px;
-}
-
-.expand {
-  animation: cursorAnim2 0.7s forwards;
-  border: 1px solid var(--dark-color);
-}
-
 /* End of Reset and Common Styles */
 
 /* Section 1 */
@@ -227,7 +199,7 @@ html {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .about-text {
@@ -303,6 +275,41 @@ html {
 }
 
 /* End of About */
+
+/* hopestems */
+.hope-body {
+  display: flex;
+  background-color: #7f5af0;
+}
+
+.hope-container {
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 2.4rem;
+}
+
+.hope-header {
+  font-size: 6.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 2.4rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.hope-text {
+  font-size: 2.4rem;
+  line-height: 1.6;
+}
+
+.hope-img {
+  height: 540px;
+  width: 960px;
+}
+
+/* End of hopestems */
 
 /* Footer */
 .footer-contact {
