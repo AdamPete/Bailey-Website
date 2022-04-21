@@ -121,7 +121,6 @@ body {
   top: 50%;
   transform: translate(-40%, -50%) scale(0.95);
   visibility: hidden;
-  box-shadow: 1px 1px 10px black;
   opacity: 0;
   transition: all 0.5s;
 }

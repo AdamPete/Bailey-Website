@@ -277,36 +277,143 @@ html {
 /* End of About */
 
 /* hopestems */
-.hope-body {
+.project-body {
+  line-height: 1.5;
+  min-height: 100vh;
+  /* display: grid;
+  place-items: center; */
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #271d1a;
+  font-family: 'IBM Plex Sans', sans-serif;
+  overflow: hidden;
   background-color: #7f5af0;
 }
 
-.hope-container {
+.project-container {
+  display: flex;
   justify-items: center;
   align-items: center;
-  margin: 0 auto;
-  flex-direction: column;
   padding: 2.4rem;
+  flex-direction: row;
+  gap: 1.6rem;
 }
 
-.hope-header {
-  font-size: 6.4rem;
+.nobs-body {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.nobs-body h1 {
+  font-family: inherit;
+  color: white;
+  font-size: 1.2rem;
   font-weight: 700;
-  text-transform: capitalize;
-  margin-bottom: 2.4rem;
+}
+
+.card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 85%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  background-color: #362824;
+  color: #fff3ec;
   text-align: center;
-  letter-spacing: 2px;
+  padding: 3em;
+  z-index: 1;
 }
 
-.hope-text {
+.profile-name {
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.profile-name::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 3em;
+  background-color: #ffc0ad;
+  margin: 0.7em auto 0.5em;
+  opacity: 0.3;
+}
+
+.profile-position {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #ffc0ad;
+  margin-bottom: 1em;
+}
+.profile-sidebar {
+  background-color: #0e76a8;
+}
+
+.profile-body {
+  font-weight: 300;
   font-size: 2.4rem;
-  line-height: 1.6;
+  opacity: 0.8;
+  padding: 5px;
+  margin-bottom: 0;
+  color: #fff3ec;
 }
 
-.hope-img {
-  height: 540px;
-  width: 960px;
+.profile-img {
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 125px;
+  margin: 0 auto;
+}
+
+.social-link {
+  color: #ffc0ad;
+  opacity: 0.5;
+  font-size: 1.325rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  opacity: 1;
+}
+
+.profile-form {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #ffc0ad;
+}
+
+@media (min-width: 650px) {
+  .card {
+    flex-direction: row;
+  }
+  .profile-main {
+    text-align: left;
+    margin-left: 2em;
+  }
+
+  .profile-name::after {
+    margin-left: 0;
+  }
 }
 
 /* End of hopestems */
